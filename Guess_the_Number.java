@@ -66,7 +66,7 @@ public class Guess_the_Number {
             else{
                 System.out.println("Match got Tied");
             }
-        System.out.println("--------------------------------");
+        System.out.println("-------------------------------------------");
     
 }
 }
