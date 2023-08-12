@@ -21,7 +21,7 @@ public class Guess_the_Number {
         System.out.println("Rule 2: Guess the Number from 1 to 100.");
         System.out.println("Rule 3: If User wins 3 rounds then user will win the match.");
         System.out.println("Rule 4: If Computer wins 3 rounds then Computer will win the match.");
-        System.out.println("--------------------------------");
+        System.out.println("------------------------------------------");
 
         for(int i=1;i<=5;i++){
             System.out.println("Match:"+count);
@@ -52,10 +52,10 @@ public class Guess_the_Number {
         else{
             System.out.println("Invalid Choice!!!");
         }
-        System.out.println("--------------------------------");
+        System.out.println("---------------------------------------------");
         System.out.println("Computer Wins: "+comp_wins);
         System.out.println("User Wins: "+user_wins);
-        System.out.println("--------------------------------");
+        System.out.println("---------------------------------------------");
     }
     if(user_wins<comp_wins){
                 System.out.println("Computer Wins The Match");
