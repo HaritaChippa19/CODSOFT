@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Grade_Calculator{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter Your Name: ");
+        String StudName = sc.nextLine();
+        System.out.println("Welcome "+StudName);
+        
+        System.out.println("Please Enter Your Marks Out of 100");
+        System.out.println("English: ");
+        int english = sc.nextInt();
+        System.out.println("Hindi: ");
+        int hindi = sc.nextInt();
+        System.out.println("Marathi: ");
+        int marathi = sc.nextInt();
+        System.out.println("Maths: ");
+        int maths = sc.nextInt();
+        System.out.println("Science: ");
+        int science = sc.nextInt();
+        System.out.println("Social Studies: ");
+        int social_studies = sc.nextInt();
+        
+        int sum;
+        int avg;
+        sum=english+hindi+marathi+maths+science+social_studies;
+        avg=sum/6;
+       
+        System.out.println("-----------------Result-------------------");
+        System.out.println("Total Marks of "+StudName + " is " +sum);
+        System.out.println("Average Marks is "+avg);
+        if(avg>=85){
+            System.out.println("Grade: A");
+        }
+        else if(avg>75 && avg<85){
+            System.out.println("Grade: B");
+        }
+        else if(avg>65 && avg<75){
+            System.out.println("Grade: C");
+        }
+        else if(avg>55 && avg<65){
+            System.out.println("Grade: D");
+        }
+        else if(avg>35 && avg<55){
+            System.out.println("Grade: E");
+        }
+        else{
+            System.out.println("Grade: F");
+        }
+        System.out.println("------------------------------------------");
+
+    }
+}
